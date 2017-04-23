@@ -12,4 +12,5 @@
  *
  *= require_tree .
  *= require_self
+ *= require materialize-css/dist/css/materialize.min
  */

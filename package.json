@@ -1,5 +1,7 @@
 {
   "name": "WebTest",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "materialize-css": "^0.98.2"
+  }
 }
