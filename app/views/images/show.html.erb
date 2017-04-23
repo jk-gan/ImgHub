@@ -1,2 +1,6 @@
 <h1>Images#show</h1>
 <p>Find me in app/views/images/show.html.erb</p>
+
+<%= @image.name %>
+<%= @image.description %>
+<%= image_tag @image.image.url(:medium) %>
