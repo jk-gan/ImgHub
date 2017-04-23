@@ -9,21 +9,23 @@
     </div>
     <%= @image.description %>
   </div>
-  <div class="fixed-action-btn">
-    <a class="btn-floating btn-large blue-grey darken-4">
-      <i class="large material-icons">menu</i>
-    </a>
-    <ul>
-      <li>
-        <%= link_to image_path(@image), method: :delete, data: { confirm: 'Are you sure to delete the image?' }, class: 'btn-floating red' do %>
-          <i class="material-icons">delete</i>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to edit_image_path(@image), class: 'btn-floating yellow darken-1' do %>
-          <i class="material-icons">edit</i>
-        <% end %>
-      </li>
-    </ul>
- </div>
+  <% if policy(@image).edit? %>
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large blue-grey darken-4">
+        <i class="large material-icons">menu</i>
+      </a>
+      <ul>
+        <li>
+          <%= link_to image_path(@image), method: :delete, data: { confirm: 'Are you sure to delete the image?' }, class: 'btn-floating red' do %>
+            <i class="material-icons">delete</i>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to edit_image_path(@image), class: 'btn-floating yellow darken-1' do %>
+            <i class="material-icons">edit</i>
+          <% end %>
+        </li>
+      </ul>
+   </div>
+  <% end %>
 </div>
