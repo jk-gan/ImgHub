@@ -1,4 +1,4 @@
-<%= link_to 'Upload new image', new_image_path %>
+<%= link_to 'Upload new image', new_image_path if policy(:image).new? %>
 
 <div class="row">
   <% @images.each do |image| %>
