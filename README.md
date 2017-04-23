@@ -1,24 +1,7 @@
-# README
+# ImgHub
+A web application allows users to upload, share and comment on images.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Home page](home.png)
+![Show page](show.png)
+![Comment section](comment.png)
