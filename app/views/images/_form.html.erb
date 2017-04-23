@@ -1,0 +1,16 @@
+<%= simple_form_for params do |form| %>
+  <div class="row">
+  <%= form.input :name, label: false, placeholder: 'Name', wrapper_html: { class: 'input-field' } %>
+  <%= form.input :description, label: false, placeholder: 'Description', input_html: { class: 'materialize-textarea' }, wrapper_html: { class: 'input-field' } %>
+  <div class="file-field input-field">
+    <div class="btn blue-grey">
+      <span>File</span>
+      <%= form.input :image, label: false, as: :file %>
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text">
+    </div>
+  </div>
+  <%= form.submit submit, class: 'btn waves-effect waves-light blue-grey darken-4' %>
+</div>
+<% end %>

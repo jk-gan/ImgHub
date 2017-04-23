@@ -1,9 +1,3 @@
-<h1>Images#new</h1>
-<p>Find me in app/views/images/new.html.erb</p>
+<h1>Upload New Image</h1>
 
-<%= simple_form_for @image do |form| %>
-  <%= form.input :name, label: false, placeholder: 'Name' %>
-  <%= form.input :description, label: false, placeholder: 'Description' %>
-  <%= form.input :image, as: :file %>
-  <%= form.submit 'Upload Image' %>
-<% end %>
+<%= render 'form', params: @image, submit: 'Upload Image' %>
