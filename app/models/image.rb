@@ -8,7 +8,5 @@ class Image < ApplicationRecord
 
   process_in_background :image
 
-  validates :name, presence: true
-  validates :description, presence: true
   validates :image, presence: true
 end

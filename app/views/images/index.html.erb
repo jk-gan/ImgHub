@@ -1,4 +1,4 @@
-<%= link_to 'Upload new image', new_image_path if policy(:image).new? %>
+<%= link_to 'Upload new image', new_image_path, class: 'waves-effect btn-flat' if policy(:image).new? %>
 
 <div class="row">
   <% @images.each do |image| %>
